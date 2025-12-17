@@ -1,0 +1,320 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    list-style: none;
+    --primary-color: rgb(14, 13, 13);
+    --secundary-color:rgb(200, 202, 202);
+    --bg-color:#bbbaba;
+    --bg-color-2:rgb(244, 247, 247);
+    --bg-color-3:rgb(48, 49, 49);
+}
+
+header{
+    background-color: var(--primary-color);
+}
+
+.cabecalho, 
+.principal,
+.content,
+.contact{
+    margin-left: 300px;
+    margin-right:300px;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecalho img{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+nav ul{    
+    display: flex;  
+    text-align: center;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+nav ul a{
+    margin-left: 15px;
+    color:var(--secundary-color);
+}
+
+header img, 
+    .top-side img{
+    border-radius: 50%;
+}
+
+.top-side{
+    background-color: var(--bg-color);
+    width: 100vw;
+    height: 320px;
+}
+
+.top-side img{
+    margin-left:300px;
+    margin-top: 130px;
+    border:2px solid var(--primary-color);
+}
+
+.social_media{
+    display: flex;
+    margin-top: 135px;
+    margin-left: 115px;
+    padding-top: 10px;
+    margin-right: 100px;
+}
+
+.social_media img{
+    width: 55px;
+    height: 55px;
+}
+
+.logo_media_social{
+    width: 50px;
+    margin-left: 10px;
+    text-align: center;   
+}
+
+.logo_media_social a{
+    padding-top: 5px;
+    font-size:10px;
+    text-transform: uppercase;
+    text-decoration:none;
+    color: var(--primary-color);
+}
+
+.principal{
+    display: flex;
+}
+
+.about{
+    margin-left: 70px;
+    color: rgb(77, 75, 75);
+}
+
+.about h1{
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.about .curso{
+    font-size: 30px;
+    margin-top: 3px;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.about .hello{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.about p{
+    margin-bottom: 20px;
+}
+
+.subtitulo{
+    font-family:monospace;
+    font-weight: 500;
+    font-size: 40px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    color:var(--primary-color);
+}
+
+.container{
+    background-color: var(--secundary-color);
+    padding-bottom: 50px;
+}
+
+.content .divider{
+    display: flex;
+}
+.content .divider .divisor,
+.experiencia .divider .divisor_2{
+    width:10px;
+    height: 70px;
+    size:100px;
+    margin-bottom: 20px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin-right: 15px;
+}
+
+.content .divider .divisor{
+    background-color: var(--primary-color);
+}
+
+.experiencia .divider .divisor_2{
+    background-color:var(--bg-color-2);
+}
+
+.experiencia{
+    background-color: var(--bg-color-3);
+    color: var(--secundary-color);
+}
+
+.experiencia h2, .contato h2{
+    color: var(--bg-color);
+}
+
+.projetos .project, .contato h2{
+    margin-left: 300px;
+}
+
+.projetos .content {
+    display: flex;
+    justify-content: space-around;
+    gap:30px;
+}
+
+.content .card{
+    border: 1px solid transparent;
+    width: 240px;
+    padding: 15px 10px;
+    background-color: var(--bg-color-2);
+    border-radius: 5px;
+}
+
+.content .card img{
+    width: 220px;
+    height: 150px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.content .card h4{
+    padding-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.content .card p{
+    padding-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.content .card .btn-button{
+    background-color: var(--bg-color-3);
+    color:var(--bg-color);
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.content .card .btn_repostorio{
+    margin-right: 3px;
+}
+
+.container.contato{
+    background-color: var(--primary-color);
+    color: var(--secundary-color);
+}
+
+.contact{
+    display: flex;
+    gap: 30px;
+}
+
+.contact .left-side figcaption{
+    margin-bottom: 15px;
+    margin-top:7px;
+    color: var(--secundary-color);
+}
+
+.contact .left-side .media_social{
+    margin-top: 60px;
+    font-size: 10px;
+    display: flex;
+    gap:20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contact .left-side .media_social img{
+    width:50px;
+    width: 50px;
+    border-radius: 50px;
+}
+
+.container .contato .contact a{
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.container .contato .contact .left-side p{
+    margin-bottom:20px;
+    font-size: 19px;
+    font-weight: 100;
+}
+
+.container .contato .contact form{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.container .contato .contact form input{
+    width: 450px;
+    height: 35px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.container .contato .contact form .btn-enviar{
+    width: 100px;
+    color: var(--bg-color-2);
+    background-color: var(--bg-color-3);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+    justify-content: center;
+    border: 0;
+    height: 35px;                                                                                  margin: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 170px;
+}
+
+#btnVoltar {
+    /* Posição Fixa na tela */
+    position: fixed; 
+    /* Fixa na parte superior (ou inferior, dependendo da sua preferência) */
+    bottom: 20px; 
+    /* Fixa na lateral direita */
+    right: 20px;
+    background-color: #007bff;
+   color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#btnVoltar:hover {
+    background-color: #0056b3;
+}
+
+/* Conteúdo de simulação */
+.conteudo {
+    padding: 20px;
+}
+.conteudo h2 {
+    margin-top: 40px;
+}
+
